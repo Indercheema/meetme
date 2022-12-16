@@ -1,0 +1,601 @@
+@import "./reset.css";
+
+
+
+:root {
+    --app-dark-bg: #1a1d28;
+    --app-red: #ff3c57;
+    --app-green: #33ab4e;
+    --app-purple: #833cff;
+    --app-orange: #ff833c;
+    --app-blue: #3c57ff;
+    --app-blue-hover: #364ee6;
+   }
+
+/* -------------------------------*/
+/*Header                          */
+/* -------------------------------*/
+/* .container {
+  width: min(100% - 15px, 1380px);
+  margin-inline: auto;
+} */
+
+body {
+  background-color: #f1f2f3;
+}
+header {
+  min-width: 100%;
+  height: 56px;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+.flexbox {
+  display: flex;
+}
+
+.title {
+  width: 10%;
+  height: 56%;
+}
+
+.user-avtar {
+  width: 10%;
+}
+
+.user-avtar img {
+  text-align: right;
+}
+
+
+.title h1 {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 56px;
+  color: #000;
+  text-transform: uppercase;
+  letter-spacing: 0.2px;
+  cursor: pointer;
+}
+
+nav {
+  width: 80%;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li{
+  display: inline;
+  line-height: 56px;
+  cursor: default;
+}
+nav ul li a, .mobile-menu {
+  font-size: 18px;
+  color: #000;
+  font-weight: 600;
+  text-decoration: none;
+  letter-spacing: 0.2px;
+  cursor: pointer;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+}
+nav ul li + li {
+  margin-left: 18px;
+}
+
+.mobile-menu {
+  display: none;
+}
+
+.btn-menu {
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 600;
+  text-align: center;
+  line-height: 40px;
+  width: 140px;
+  border-radius: 50px;
+	background-color: #DF542D;
+  color: #fff;
+  cursor: pointer;
+}
+.btn-menu:hover {
+	background-color: #D8382C;
+  transition: background-color 0.25s ease-in-out;
+  text-decoration: none;
+
+}
+
+.profile , .user-dp  {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  padding: 2px;
+  cursor: pointer;
+}
+
+.profile {
+  margin-top: 3px;
+}
+
+.user-dp {
+  margin-top: 12px;
+}
+/* -------------------------------*/
+/* Text Area                      */
+/* -------------------------------*/
+
+.area {
+  display: grid;
+  padding: 20px;
+  justify-content: center;
+  place-items: center;
+  text-align: center;
+}
+
+i + i {
+  margin-left: 10px;
+}
+
+.post {
+  width: 100%;
+  display: flex;
+  place-items: center;
+  gap: 150px;
+}
+
+
+
+
+.posting + .post {
+  margin-top: 40px;
+}
+
+
+  .post-header{
+    height: 45px;
+    display: flex;
+    align-items: center;
+}
+
+.user {
+  color: #000;
+  margin-left: 10px;
+}
+
+.date {
+  color: #000;
+  /* text-align: right; */
+  top: 20px;
+  right: 20px;
+  position: absolute;
+}
+
+.uploaded-pic {
+  width: 500px;
+  height: 400px;
+  padding: 10px;
+  border-radius: 6px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.profile-2 {
+  border-radius: 50%;
+  text-align: center;
+  /* width: 100px; */
+  /* height: 100px; */
+  padding: 2px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.profile-info > .div-content {
+  top: 1px;
+  right: 1px;
+  left: 1px;
+}
+
+.ul-user {
+  list-style: none;
+}
+
+/* .upload-file {
+  display: none;
+} */
+
+.upload-icon {
+  cursor: pointer;
+}
+
+.file-name {
+  color: #fff;
+}
+
+
+
+/* -------------------------------*/
+/* Main                           */
+/* -------------------------------*/
+   
+.container {
+  width: min(100% - 30px, 1380px);
+  margin-inline: auto;
+}
+
+   body {
+    background-color: #f1f2f3;
+    height: calc(100vh - 20px);
+   }
+
+   h2 , form ,p{
+    color: #fff;
+    text-align: center;
+    margin-top: 20px;
+   }
+
+.center {
+    /* margin-top: 50px; */
+    display: grid;
+    padding: 20px;
+    justify-content: center;
+    place-items: center;
+    text-align: center;
+
+}
+
+.para{
+  color: #000;
+  font-size: 12px;
+  text-align: left;
+}
+
+.big-box {
+  margin-top: 60px;
+  display: grid;
+  grid-template-columns: repeat(1, minmax(300px, 1fr));
+  gap: 1rem;
+  height: 100%;
+  width: 100%;
+  padding: 10px;
+}
+
+
+.square {
+  position: relative;
+  text-align: left;
+  width: 600px;
+  color: #fff;
+  padding: 10px 15px;
+  border: 1px solid rgba(100, 218, 96, 0.9);
+  animation: animate .3s ease-in-out;
+  cursor: pointer;
+}
+
+
+.btn , .btn2 {
+  font-size: 15px;
+  display: inline-block;
+  list-style: none;
+  text-align: center;
+  line-height: 40px;
+  width: 140px;
+  border-radius: 50px;
+	background-color: #DF542D;
+  color: #fff;
+  cursor: pointer;
+}
+
+
+
+.btn:hover {
+	background-color: #D8382C;
+  transition: background-color 0.1s ease-in-out;
+}
+
+input[type="text"] {
+  width: 400px;
+  /* padding: 20px; */
+  line-height: 40px;
+  border: 1px solid #a9a9a9 ;
+  border-radius: 10px;
+  font-weight: 600;
+  color: #000;
+  text-align: left;
+  text-indent: 10px;
+  background-color: #1a1d28;
+  background-size: 15px;
+  transition: border-color 0.25s ease-in-out;
+}
+
+input[type="text"]:focus {
+  border: 1px solid rgba(0, 0, 0, 0.9);
+}
+
+
+button {
+  margin-left: 20px;
+}
+
+.overlay {
+  width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.7);
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+}
+
+.profile-info {
+  width: 400px;
+  height: 700px;
+  color: #000;
+  background-color: #fff;
+  opacity: 6;
+}
+
+.displayUser {
+  color: #000;
+}
+
+@keyframes animate {
+  from {
+      opacity: 0;
+      transform: translateY(12px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0px);
+  }
+}
+
+
+
+/* -------------------------------*/
+/*Column Section                  */
+/* -------------------------------*/
+
+.column-bg {
+  background-color: #f0f1f2;
+  /* padding: 20px; */
+}
+
+.row {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 20px;
+}
+
+.section-columns {
+  margin: 50px 0;
+}
+
+.column {
+  flex-grow: 1;
+  width: calc(25% - 15px);
+  border-radius: 6px;
+  box-shadow: 0px 20px 48px 0px rgb(0 0 0 / 0.05);
+  transition: all 0.25s ease-in-out;
+}
+
+
+
+
+.one {
+  background-color: #fff;
+  height: 570px;
+}
+.two {
+  flex-grow: 6;
+  background-color: #fff;
+  height: 200px;
+}
+
+.three {
+  background-color: #fff;
+}
+
+
+.box {
+  text-align: left;
+  margin-top: 13px;
+  padding: 20px;
+}
+
+div.box > h2 , p {
+  margin-top: 10px;
+}
+
+div.box > div + p  {
+  margin-top: 10px;
+}
+
+h2 {
+  font-weight: 400;
+  font-size: 24px;
+}
+
+.user-data {
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+  border-bottom: #f1f2f3 2px solid;
+}
+
+.user-info p {
+  color: #000;
+  text-align: left;
+}
+
+.random-user-heading h2 {
+  color: #000;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+/* -------------------------------*/
+/* User Display                    */
+/* -------------------------------*/
+
+.user-display {
+  display: grid;
+  place-items: center;
+}
+
+.user-information h2, p {
+  color: #000;
+}
+
+.link {
+  display: grid;
+  place-items: center;
+}
+
+.profile2 {
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+  size: 100px;
+}
+
+.my-data {
+  margin-top: 10px;
+  display: flex;
+  place-items: center;
+  justify-content: center;
+}
+
+.connection {
+  border-right: 1px solid;
+  width: 50%;
+  padding: 20px;
+}
+
+.views {
+  border-left: 1px solid;
+  width: 50%;
+  padding: 20px;
+}
+
+.link {
+  margin-top: 10px;
+}
+   
+.upgrade-btn {
+  margin-top: 10px;
+  display: grid;
+  place-items: center;
+}
+
+.btn-up {
+  width: 60%;
+  border-radius: 50px;
+  margin-left: 0px;
+}
+
+
+.feed {
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 6px;
+  box-shadow: 0px 20px 48px 0px rgb(0 0 0 / 0.05);
+  transition: all 0.25s ease-in-out;
+}
+
+.box + .feed {
+  margin-top: 20px;
+}
+
+.feed-1 {
+  width: 100%;
+  display: flex;
+  place-items: center;
+}
+
+.feed-1 p {
+  color: #000;
+  text-align: left;
+}
+
+.u-name {
+  font-size: 18px
+}
+
+.place {
+  font-size: 11px;
+  color: #f1f2f3;
+}
+
+.post-img {
+  width: 10%;
+}
+
+.post-fake {
+  width: 60%;
+}
+
+.post-time {
+  width: 30%;
+}
+
+.post-time p {
+  text-align: right;
+}
+
+.post-line p{
+  text-align: left;
+}
+
+.post-line + .post-pic {
+  margin-top: 10px;
+}
+
+.likes {
+  display: flex; 
+  gap: 5px;
+  align-items: center; 
+  line-height: 40px; 
+}
+
+.comments {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.comment-box {
+  margin-left: 30px;
+}
+
+.feed + .feed {
+  margin-top: 10px;
+}
+
+i + a {
+  margin-left: 5px;
+}
+
+.post-edit {
+  font-size: 25px;
+  border-radius: 50%;
+}
+
+.fa-heart {
+  color: #DF542D;;
+}
+
+.user-avtar {
+  display: grid;
+  justify-content: right;
+}
