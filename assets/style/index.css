@@ -172,5 +172,5 @@ input[type="text"]:focus , input[type="password"]:focus {
 }
 
 .password::placeholder {
-	text-align: left;
+	line-height: 40px;
 }
