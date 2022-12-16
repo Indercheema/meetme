@@ -27,8 +27,8 @@ const mesg = select('.info');
 // let userName = 'inder@email.com';
 // let pass = 'Inder@123';
 
-localStorage.setItem('userName', '1');
-localStorage.setItem('pass', '1');
+localStorage.setItem('userName', 'inder@email.com');
+localStorage.setItem('pass', 'inder@123');
 
 onEvent('click' , loginBtn, function() {
     let userLogin = login.value.trim();

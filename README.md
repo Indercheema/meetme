@@ -4,6 +4,6 @@
 
 ## Login details
 
-User name : 12
+User name : inder@email.com
 \
-Password : 12
+Password : inder@123
